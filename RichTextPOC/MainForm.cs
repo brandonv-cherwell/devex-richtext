@@ -23,7 +23,7 @@ namespace RichTextPOC
 			var richTextForm = new Form1();
 			if (!string.IsNullOrWhiteSpace(this.textBox1.Text))
 			{
-				richTextForm.SetHtml(this.textBox1.Text);
+				richTextForm.SetHtml(textBox1.Text);
 			}
 			
 			var result = richTextForm.ShowDialog();

@@ -29,13 +29,13 @@
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.buttonSave = new System.Windows.Forms.Button();
+			this.buttonHeading4 = new System.Windows.Forms.Button();
+			this.buttonHeading3 = new System.Windows.Forms.Button();
+			this.buttonHeading2 = new System.Windows.Forms.Button();
+			this.buttonHeading1 = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.richEditControl1 = new DevExpress.XtraRichEdit.RichEditControl();
-			this.buttonHeading1 = new System.Windows.Forms.Button();
-			this.buttonHeading2 = new System.Windows.Forms.Button();
-			this.buttonHeading3 = new System.Windows.Forms.Button();
-			this.buttonHeading4 = new System.Windows.Forms.Button();
-			this.buttonSave = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
@@ -52,6 +52,61 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(941, 81);
 			this.panel1.TabIndex = 0;
+			// 
+			// buttonSave
+			// 
+			this.buttonSave.Dock = System.Windows.Forms.DockStyle.Left;
+			this.buttonSave.Location = new System.Drawing.Point(600, 0);
+			this.buttonSave.Name = "buttonSave";
+			this.buttonSave.Size = new System.Drawing.Size(150, 81);
+			this.buttonSave.TabIndex = 4;
+			this.buttonSave.Text = "Save and Close";
+			this.buttonSave.UseVisualStyleBackColor = true;
+			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+			// 
+			// buttonHeading4
+			// 
+			this.buttonHeading4.Dock = System.Windows.Forms.DockStyle.Left;
+			this.buttonHeading4.Location = new System.Drawing.Point(450, 0);
+			this.buttonHeading4.Name = "buttonHeading4";
+			this.buttonHeading4.Size = new System.Drawing.Size(150, 81);
+			this.buttonHeading4.TabIndex = 3;
+			this.buttonHeading4.Text = "Heading 4";
+			this.buttonHeading4.UseVisualStyleBackColor = true;
+			this.buttonHeading4.Click += new System.EventHandler(this.buttonHeading4_Click);
+			// 
+			// buttonHeading3
+			// 
+			this.buttonHeading3.Dock = System.Windows.Forms.DockStyle.Left;
+			this.buttonHeading3.Location = new System.Drawing.Point(300, 0);
+			this.buttonHeading3.Name = "buttonHeading3";
+			this.buttonHeading3.Size = new System.Drawing.Size(150, 81);
+			this.buttonHeading3.TabIndex = 2;
+			this.buttonHeading3.Text = "Heading 3";
+			this.buttonHeading3.UseVisualStyleBackColor = true;
+			this.buttonHeading3.Click += new System.EventHandler(this.buttonHeading3_Click);
+			// 
+			// buttonHeading2
+			// 
+			this.buttonHeading2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.buttonHeading2.Location = new System.Drawing.Point(150, 0);
+			this.buttonHeading2.Name = "buttonHeading2";
+			this.buttonHeading2.Size = new System.Drawing.Size(150, 81);
+			this.buttonHeading2.TabIndex = 1;
+			this.buttonHeading2.Text = "Heading 2";
+			this.buttonHeading2.UseVisualStyleBackColor = true;
+			this.buttonHeading2.Click += new System.EventHandler(this.buttonHeading2_Click);
+			// 
+			// buttonHeading1
+			// 
+			this.buttonHeading1.Dock = System.Windows.Forms.DockStyle.Left;
+			this.buttonHeading1.Location = new System.Drawing.Point(0, 0);
+			this.buttonHeading1.Name = "buttonHeading1";
+			this.buttonHeading1.Size = new System.Drawing.Size(150, 81);
+			this.buttonHeading1.TabIndex = 0;
+			this.buttonHeading1.Text = "Heading 1";
+			this.buttonHeading1.UseVisualStyleBackColor = true;
+			this.buttonHeading1.Click += new System.EventHandler(this.buttonHeading1_Click);
 			// 
 			// panel2
 			// 
@@ -71,61 +126,6 @@
 			this.richEditControl1.TabIndex = 0;
 			this.richEditControl1.Text = "richEditControl1";
 			// 
-			// buttonHeading1
-			// 
-			this.buttonHeading1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.buttonHeading1.Location = new System.Drawing.Point(0, 0);
-			this.buttonHeading1.Name = "buttonHeading1";
-			this.buttonHeading1.Size = new System.Drawing.Size(150, 81);
-			this.buttonHeading1.TabIndex = 0;
-			this.buttonHeading1.Text = "Heading 1";
-			this.buttonHeading1.UseVisualStyleBackColor = true;
-			this.buttonHeading1.Click += new System.EventHandler(this.buttonHeading1_Click);
-			// 
-			// buttonHeading2
-			// 
-			this.buttonHeading2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.buttonHeading2.Location = new System.Drawing.Point(150, 0);
-			this.buttonHeading2.Name = "buttonHeading2";
-			this.buttonHeading2.Size = new System.Drawing.Size(150, 81);
-			this.buttonHeading2.TabIndex = 1;
-			this.buttonHeading2.Text = "Heading 2";
-			this.buttonHeading2.UseVisualStyleBackColor = true;
-			this.buttonHeading2.Click += new System.EventHandler(this.buttonHeading2_Click);
-			// 
-			// buttonHeading3
-			// 
-			this.buttonHeading3.Dock = System.Windows.Forms.DockStyle.Left;
-			this.buttonHeading3.Location = new System.Drawing.Point(300, 0);
-			this.buttonHeading3.Name = "buttonHeading3";
-			this.buttonHeading3.Size = new System.Drawing.Size(150, 81);
-			this.buttonHeading3.TabIndex = 2;
-			this.buttonHeading3.Text = "Heading 3";
-			this.buttonHeading3.UseVisualStyleBackColor = true;
-			this.buttonHeading3.Click += new System.EventHandler(this.buttonHeading3_Click);
-			// 
-			// buttonHeading4
-			// 
-			this.buttonHeading4.Dock = System.Windows.Forms.DockStyle.Left;
-			this.buttonHeading4.Location = new System.Drawing.Point(450, 0);
-			this.buttonHeading4.Name = "buttonHeading4";
-			this.buttonHeading4.Size = new System.Drawing.Size(150, 81);
-			this.buttonHeading4.TabIndex = 3;
-			this.buttonHeading4.Text = "Heading 4";
-			this.buttonHeading4.UseVisualStyleBackColor = true;
-			this.buttonHeading4.Click += new System.EventHandler(this.buttonHeading4_Click);
-			// 
-			// buttonSave
-			// 
-			this.buttonSave.Dock = System.Windows.Forms.DockStyle.Left;
-			this.buttonSave.Location = new System.Drawing.Point(600, 0);
-			this.buttonSave.Name = "buttonSave";
-			this.buttonSave.Size = new System.Drawing.Size(150, 81);
-			this.buttonSave.TabIndex = 4;
-			this.buttonSave.Text = "Save and Close";
-			this.buttonSave.UseVisualStyleBackColor = true;
-			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,7 +134,7 @@
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Text = "RTE Form 17.2.13";
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			this.ResumeLayout(false);
