@@ -126,14 +126,15 @@
 			this.richEditControl1.TabIndex = 0;
 			this.richEditControl1.Text = "richEditControl1";
 			// 
-			// Form1
+			// RteForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(941, 516);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
-			this.Name = "Form1";
+			this.Name = "RteForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "RTE Form 17.2.13";
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);

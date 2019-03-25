@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.buttonOpenWPF = new System.Windows.Forms.Button();
 			this.buttonLoadHTML = new System.Windows.Forms.Button();
 			this.buttonSaveHTML = new System.Windows.Forms.Button();
+			this.buttonOpenWPF = new System.Windows.Forms.Button();
 			this.buttonOpenRTE = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,9 +41,9 @@
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.buttonOpenWPF);
 			this.panel1.Controls.Add(this.buttonLoadHTML);
 			this.panel1.Controls.Add(this.buttonSaveHTML);
+			this.panel1.Controls.Add(this.buttonOpenWPF);
 			this.panel1.Controls.Add(this.buttonOpenRTE);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -51,21 +51,10 @@
 			this.panel1.Size = new System.Drawing.Size(923, 100);
 			this.panel1.TabIndex = 0;
 			// 
-			// buttonOpenWPF
-			// 
-			this.buttonOpenWPF.Dock = System.Windows.Forms.DockStyle.Left;
-			this.buttonOpenWPF.Location = new System.Drawing.Point(450, 0);
-			this.buttonOpenWPF.Name = "buttonOpenWPF";
-			this.buttonOpenWPF.Size = new System.Drawing.Size(150, 100);
-			this.buttonOpenWPF.TabIndex = 3;
-			this.buttonOpenWPF.Text = "Open RTE WPF";
-			this.buttonOpenWPF.UseVisualStyleBackColor = true;
-			this.buttonOpenWPF.Click += new System.EventHandler(this.buttonOpenWPF_Click);
-			// 
 			// buttonLoadHTML
 			// 
 			this.buttonLoadHTML.Dock = System.Windows.Forms.DockStyle.Left;
-			this.buttonLoadHTML.Location = new System.Drawing.Point(300, 0);
+			this.buttonLoadHTML.Location = new System.Drawing.Point(450, 0);
 			this.buttonLoadHTML.Name = "buttonLoadHTML";
 			this.buttonLoadHTML.Size = new System.Drawing.Size(150, 100);
 			this.buttonLoadHTML.TabIndex = 2;
@@ -75,12 +64,23 @@
 			// buttonSaveHTML
 			// 
 			this.buttonSaveHTML.Dock = System.Windows.Forms.DockStyle.Left;
-			this.buttonSaveHTML.Location = new System.Drawing.Point(150, 0);
+			this.buttonSaveHTML.Location = new System.Drawing.Point(300, 0);
 			this.buttonSaveHTML.Name = "buttonSaveHTML";
 			this.buttonSaveHTML.Size = new System.Drawing.Size(150, 100);
 			this.buttonSaveHTML.TabIndex = 1;
 			this.buttonSaveHTML.Text = "Save HTML";
 			this.buttonSaveHTML.UseVisualStyleBackColor = true;
+			// 
+			// buttonOpenWPF
+			// 
+			this.buttonOpenWPF.Dock = System.Windows.Forms.DockStyle.Left;
+			this.buttonOpenWPF.Location = new System.Drawing.Point(150, 0);
+			this.buttonOpenWPF.Name = "buttonOpenWPF";
+			this.buttonOpenWPF.Size = new System.Drawing.Size(150, 100);
+			this.buttonOpenWPF.TabIndex = 3;
+			this.buttonOpenWPF.Text = "Open RTE WPF";
+			this.buttonOpenWPF.UseVisualStyleBackColor = true;
+			this.buttonOpenWPF.Click += new System.EventHandler(this.buttonOpenWPF_Click);
 			// 
 			// buttonOpenRTE
 			// 
@@ -119,6 +119,7 @@
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
 			this.Name = "MainForm";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main Form 17.2.13";
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
