@@ -103,8 +103,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RichTextWindowWPF.xaml.cs">
-      <DependentUpon>RichTextWindowWPF.xaml</DependentUpon>
+    <Compile Include="RteFormWPF.xaml.cs">
+      <DependentUpon>RteFormWPF.xaml</DependentUpon>
     </Compile>
     <EmbeddedResource Include="RteForm.resx">
       <DependentUpon>RteForm.cs</DependentUpon>
@@ -148,7 +148,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="RichTextWindowWPF.xaml">
+    <Page Include="RteFormWPF.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
