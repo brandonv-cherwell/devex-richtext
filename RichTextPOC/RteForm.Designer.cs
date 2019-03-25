@@ -30,6 +30,7 @@
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.buttonSave = new System.Windows.Forms.Button();
+			this.buttonNormal = new System.Windows.Forms.Button();
 			this.buttonHeading4 = new System.Windows.Forms.Button();
 			this.buttonHeading3 = new System.Windows.Forms.Button();
 			this.buttonHeading2 = new System.Windows.Forms.Button();
@@ -43,6 +44,7 @@
 			// panel1
 			// 
 			this.panel1.Controls.Add(this.buttonSave);
+			this.panel1.Controls.Add(this.buttonNormal);
 			this.panel1.Controls.Add(this.buttonHeading4);
 			this.panel1.Controls.Add(this.buttonHeading3);
 			this.panel1.Controls.Add(this.buttonHeading2);
@@ -56,13 +58,24 @@
 			// buttonSave
 			// 
 			this.buttonSave.Dock = System.Windows.Forms.DockStyle.Left;
-			this.buttonSave.Location = new System.Drawing.Point(600, 0);
+			this.buttonSave.Location = new System.Drawing.Point(750, 0);
 			this.buttonSave.Name = "buttonSave";
 			this.buttonSave.Size = new System.Drawing.Size(150, 81);
 			this.buttonSave.TabIndex = 4;
 			this.buttonSave.Text = "Save and Close";
 			this.buttonSave.UseVisualStyleBackColor = true;
 			this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+			// 
+			// buttonNormal
+			// 
+			this.buttonNormal.Dock = System.Windows.Forms.DockStyle.Left;
+			this.buttonNormal.Location = new System.Drawing.Point(600, 0);
+			this.buttonNormal.Name = "buttonNormal";
+			this.buttonNormal.Size = new System.Drawing.Size(150, 81);
+			this.buttonNormal.TabIndex = 5;
+			this.buttonNormal.Text = "Normal";
+			this.buttonNormal.UseVisualStyleBackColor = true;
+			this.buttonNormal.Click += new System.EventHandler(this.buttonNormal_Click);
 			// 
 			// buttonHeading4
 			// 
@@ -152,5 +165,6 @@
 		private System.Windows.Forms.Button buttonHeading2;
 		private System.Windows.Forms.Button buttonHeading1;
 		private System.Windows.Forms.Button buttonSave;
+		private System.Windows.Forms.Button buttonNormal;
 	}
 }

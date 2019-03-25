@@ -27,13 +27,24 @@ namespace RichTextPOC
 			}
 			
 			var result = richTextForm.ShowDialog();
-			this.textBox1.Text = richTextForm.GetHtml();
+			if (result == DialogResult.OK)
+			{
+				textBox1.Text = richTextForm.GetHtml();
+			}	
 		}
 
 		private void buttonOpenWPF_Click(object sender, EventArgs e)
 		{
 			var wpfRtf = new RichTextWindowWPF();
 			wpfRtf.ShowDialog();
+
+			if (!string.IsNullOrWhiteSpace(this.textBox1.Text))
+			{
+				wpfRtf.SetHtml(textBox1.Text);
+			}
+
+			var html = wpfRtf.GetHtml();
+			textBox1.Text = html;
 		}
 	}
 }

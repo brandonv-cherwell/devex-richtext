@@ -32,32 +32,43 @@ namespace RichTextPOC
 
 		private void Button_Click_1(object sender, RoutedEventArgs e)
 		{
-			var cmd = new r.Commands.SetParagraphHeading5LevelCommand(this.richTectEditWPF);
+			var cmd = new r.Commands.SetParagraphHeading5LevelCommand(richTectEditWPF);
 			cmd.Execute();
 		}
 
 		private void Button_Click_2(object sender, RoutedEventArgs e)
 		{
-			var cmd = new r.Commands.SetParagraphHeading1LevelCommand(this.richTectEditWPF);
+			var cmd = new r.Commands.SetParagraphHeading1LevelCommand(richTectEditWPF);
 			cmd.Execute();
 		}
 
 		private void Button_Click_3(object sender, RoutedEventArgs e)
 		{
-			var cmd = new r.Commands.SetParagraphHeading2LevelCommand(this.richTectEditWPF);
+			var cmd = new r.Commands.SetParagraphHeading2LevelCommand(richTectEditWPF);
 			cmd.Execute();
 		}
 
 		private void Button_Click_4(object sender, RoutedEventArgs e)
 		{
-			var cmd = new r.Commands.SetParagraphHeading3LevelCommand(this.richTectEditWPF);
+			var cmd = new r.Commands.SetParagraphHeading3LevelCommand(richTectEditWPF);
 			cmd.Execute();
 		}
 
 		private void Button_Click_5(object sender, RoutedEventArgs e)
 		{
-			var cmd = new r.Commands.SetParagraphHeading4LevelCommand(this.richTectEditWPF);
+			var cmd = new r.Commands.SetParagraphHeading4LevelCommand(richTectEditWPF);
 			cmd.Execute();
+		}
+
+		public string GetHtml()
+		{
+			return richTectEditWPF.HtmlText;
+		}
+
+		public void SetHtml(string html)
+		{
+			richTectEditWPF.CreateNewDocument();
+			richTectEditWPF.HtmlText = html;
 		}
 	}
 }

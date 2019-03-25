@@ -21,32 +21,32 @@ namespace RichTextPOC
 		private void buttonHeading1_Click(object sender, EventArgs e)
 		{
 			//richEditControl1.CreateCommand();
-			var cmd = new r.Commands.SetParagraphHeading1LevelCommand(this.richEditControl1);
+			var cmd = new r.Commands.SetParagraphHeading1LevelCommand(richEditControl1);
 			cmd.Execute();
 		}
 
 		private void buttonHeading2_Click(object sender, EventArgs e)
 		{
-			var heading2 = new r.Commands.SetParagraphHeading2LevelCommand(this.richEditControl1);
+			var heading2 = new r.Commands.SetParagraphHeading2LevelCommand(richEditControl1);
 			heading2.Execute();
 		}
 
 		private void buttonHeading3_Click(object sender, EventArgs e)
 		{
-			var cmd = new r.Commands.SetParagraphHeading3LevelCommand(this.richEditControl1);
+			var cmd = new r.Commands.SetParagraphHeading3LevelCommand(richEditControl1);
 			cmd.Execute();
 		}
 
 		private void buttonHeading4_Click(object sender, EventArgs e)
 		{
-			var cmd = new r.Commands.SetParagraphHeading4LevelCommand(this.richEditControl1);
+			var cmd = new r.Commands.SetParagraphHeading4LevelCommand(richEditControl1);
 			cmd.Execute();
 		}
-
+		
 		private void buttonSave_Click(object sender, EventArgs e)
 		{
 			Close();
-			this.DialogResult = DialogResult.OK;
+			DialogResult = DialogResult.OK;
 		}
 
 		public string GetHtml()
@@ -57,6 +57,12 @@ namespace RichTextPOC
 		public void SetHtml(string html)
 		{
 			richEditControl1.HtmlText = html;
+		}
+
+		private void buttonNormal_Click(object sender, EventArgs e)
+		{
+			var cmd = new r.Commands.SetParagraphBodyTextLevelCommand(richEditControl1);
+			cmd.Execute();
 		}
 	}
 }
