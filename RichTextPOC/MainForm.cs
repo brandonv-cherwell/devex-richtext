@@ -20,7 +20,7 @@ namespace RichTextPOC
 
 		private void buttonOpenRTE_Click(object sender, EventArgs e)
 		{
-			var richTextForm = new Form1();
+			var richTextForm = new RteForm();
 			if (!string.IsNullOrWhiteSpace(this.textBox1.Text))
 			{
 				richTextForm.SetHtml(textBox1.Text);

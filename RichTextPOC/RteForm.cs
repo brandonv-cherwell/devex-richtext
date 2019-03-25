@@ -11,9 +11,9 @@ using r = DevExpress.XtraRichEdit;
 
 namespace RichTextPOC
 {
-	public partial class Form1 : Form
+	public partial class RteForm : Form
 	{
-		public Form1()
+		public RteForm()
 		{
 			InitializeComponent();
 		}

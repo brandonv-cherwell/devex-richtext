@@ -1,6 +1,6 @@
 ﻿namespace RichTextPOC
 {
-	partial class Form1
+	partial class RteForm
 	{
 		/// <summary>
 		/// Required designer variable.
