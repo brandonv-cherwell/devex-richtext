@@ -20,17 +20,34 @@ namespace RichTextPOC
 
 		private void buttonOpenRTE_Click(object sender, EventArgs e)
 		{
-			var richTextForm = new RteForm();
-			if (!string.IsNullOrWhiteSpace(this.textBox1.Text))
+			if (radioButtonHTML.Checked)
 			{
-				richTextForm.SetHtml(textBox1.Text);
+				var richTextForm = new RteForm();
+				if (!string.IsNullOrWhiteSpace(this.textBox1.Text))
+				{
+					richTextForm.SetHtml(textBox1.Text);
+				}
+
+				var result = richTextForm.ShowDialog();
+				if (result == DialogResult.OK)
+				{
+					textBox1.Text = richTextForm.GetHtml();
+				}
 			}
-			
-			var result = richTextForm.ShowDialog();
-			if (result == DialogResult.OK)
+			else
 			{
-				textBox1.Text = richTextForm.GetHtml();
-			}	
+				var richTextForm = new RteForm();
+				if (!string.IsNullOrWhiteSpace(this.textBox1.Text))
+				{
+					richTextForm.SetRtf(textBox1.Text);
+				}
+
+				var result = richTextForm.ShowDialog();
+				if (result == DialogResult.OK)
+				{
+					textBox1.Text = richTextForm.GetRtf();
+				}
+			}
 		}
 
 		private void buttonOpenWPF_Click(object sender, EventArgs e)
@@ -42,9 +59,6 @@ namespace RichTextPOC
 			{
 				wpfRtf.SetHtml(textBox1.Text);
 			}
-
-			var html = wpfRtf.GetHtml();
-			textBox1.Text = html;
 		}
 	}
 }

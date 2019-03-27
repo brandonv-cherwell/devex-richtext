@@ -6,10 +6,12 @@
         xmlns:local="clr-namespace:RichTextPOC"
         xmlns:dxre="http://schemas.devexpress.com/winfx/2008/xaml/richedit" x:Class="RichTextPOC.RichTextWindowWPF"
         mc:Ignorable="d"
-        Title="RichTextWindowWPF" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+        Title="RichTextWindowWPF" Height="580" Width="810" WindowStartupLocation="CenterScreen">
 	
 	<StackPanel>
-		<dxre:RichEditControl Name="richTectEditWPF" CommandBarStyle="Empty" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="500"/>
+		<dxre:RichEditControl Name="richTectEditWPF" Width="800" CommandBarStyle="Empty" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="500">
+		
+		</dxre:RichEditControl>
 		<StackPanel Orientation="Horizontal">
 			<Button Width="100" Height="50" Click="Button_Click_2">Heading1</Button>
 			<Button Width="100" Height="50" Click="Button_Click_3">Heading2</Button>

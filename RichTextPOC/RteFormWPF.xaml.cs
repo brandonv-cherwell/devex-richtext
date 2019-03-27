@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using r = DevExpress.XtraRichEdit;
+using rx = DevExpress.Xpf.RichEdit;
 
 namespace RichTextPOC
 {
@@ -38,8 +39,10 @@ namespace RichTextPOC
 
 		private void Button_Click_2(object sender, RoutedEventArgs e)
 		{
-			var cmd = new r.Commands.SetParagraphHeading1LevelCommand(richTectEditWPF);
-			cmd.Execute();
+			//var cmd = new r.Commands.SetParagraphHeading1LevelCommand(richTectEditWPF);
+			//cmd.Execute();
+			var cmd = rx.RichEditUICommand.FormatParagraphSetHeading1Level;
+			cmd.Execute(richTectEditWPF);
 		}
 
 		private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -69,6 +72,12 @@ namespace RichTextPOC
 		{
 			richTectEditWPF.CreateNewDocument();
 			richTectEditWPF.HtmlText = html;
+		}
+
+		private void Test()
+		{
+			var cmd = rx.RichEditUICommand.FormatParagraphSetHeading1Level;
+			cmd.Execute(richTectEditWPF);
 		}
 	}
 }

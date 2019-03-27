@@ -149,6 +149,7 @@
 			this.Name = "RteForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "RTE Form 17.2.13";
+			this.Load += new System.EventHandler(this.RteForm_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			this.ResumeLayout(false);

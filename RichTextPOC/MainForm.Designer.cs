@@ -29,6 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.radioButtonRTF = new System.Windows.Forms.RadioButton();
+			this.radioButtonHTML = new System.Windows.Forms.RadioButton();
 			this.buttonLoadHTML = new System.Windows.Forms.Button();
 			this.buttonSaveHTML = new System.Windows.Forms.Button();
 			this.buttonOpenWPF = new System.Windows.Forms.Button();
@@ -36,11 +39,13 @@
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.panel1.SuspendLayout();
+			this.panel3.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
+			this.panel1.Controls.Add(this.panel3);
 			this.panel1.Controls.Add(this.buttonLoadHTML);
 			this.panel1.Controls.Add(this.buttonSaveHTML);
 			this.panel1.Controls.Add(this.buttonOpenWPF);
@@ -50,6 +55,41 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(923, 100);
 			this.panel1.TabIndex = 0;
+			// 
+			// panel3
+			// 
+			this.panel3.Controls.Add(this.radioButtonRTF);
+			this.panel3.Controls.Add(this.radioButtonHTML);
+			this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panel3.Location = new System.Drawing.Point(600, 0);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(204, 100);
+			this.panel3.TabIndex = 4;
+			// 
+			// radioButtonRTF
+			// 
+			this.radioButtonRTF.AutoSize = true;
+			this.radioButtonRTF.Location = new System.Drawing.Point(50, 51);
+			this.radioButtonRTF.Name = "radioButtonRTF";
+			this.radioButtonRTF.Size = new System.Drawing.Size(46, 17);
+			this.radioButtonRTF.TabIndex = 1;
+			this.radioButtonRTF.TabStop = true;
+			this.radioButtonRTF.Tag = "RTF";
+			this.radioButtonRTF.Text = "RTF";
+			this.radioButtonRTF.UseVisualStyleBackColor = true;
+			// 
+			// radioButtonHTML
+			// 
+			this.radioButtonHTML.AutoSize = true;
+			this.radioButtonHTML.Checked = true;
+			this.radioButtonHTML.Location = new System.Drawing.Point(50, 28);
+			this.radioButtonHTML.Name = "radioButtonHTML";
+			this.radioButtonHTML.Size = new System.Drawing.Size(55, 17);
+			this.radioButtonHTML.TabIndex = 0;
+			this.radioButtonHTML.TabStop = true;
+			this.radioButtonHTML.Tag = "HTML";
+			this.radioButtonHTML.Text = "HTML";
+			this.radioButtonHTML.UseVisualStyleBackColor = true;
 			// 
 			// buttonLoadHTML
 			// 
@@ -122,6 +162,8 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main Form 17.2.13";
 			this.panel1.ResumeLayout(false);
+			this.panel3.ResumeLayout(false);
+			this.panel3.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			this.ResumeLayout(false);
@@ -137,5 +179,8 @@
 		private System.Windows.Forms.Button buttonOpenRTE;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Button buttonOpenWPF;
+		private System.Windows.Forms.Panel panel3;
+		private System.Windows.Forms.RadioButton radioButtonRTF;
+		private System.Windows.Forms.RadioButton radioButtonHTML;
 	}
 }
